@@ -18,3 +18,10 @@ G:\C#\Занятие 1\Задание 1\Одномерный массив\Patern
 G:\C#\Занятие 1\Задание 1\Одномерный массив\PaternARI\PaternARI\obj\Debug\PaternARI.csproj.CoreCompileInputs.cache
 G:\C#\Занятие 1\Задание 1\Одномерный массив\PaternARI\PaternARI\obj\Debug\PaternARI.exe
 G:\C#\Занятие 1\Задание 1\Одномерный массив\PaternARI\PaternARI\obj\Debug\PaternARI.pdb
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\bin\Debug\PaternARI.exe.config
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\bin\Debug\PaternARI.exe
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\bin\Debug\PaternARI.pdb
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\obj\Debug\PaternARI.csprojResolveAssemblyReference.cache
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\obj\Debug\PaternARI.csproj.CoreCompileInputs.cache
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\obj\Debug\PaternARI.exe
+C:\Users\Фвьшт\Desktop\C#\Lessons1\Tasks1\Lesson1.Task1.git\PaternARI\obj\Debug\PaternARI.pdb

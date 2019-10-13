@@ -25,58 +25,57 @@ namespace PaternARI
                 string k = Console.ReadLine();
                 if (Int32.TryParse(k, out x))
                 {
-                    
+                    switch (x)
+                    {
+                        case 1:
+                            Console.WriteLine("Введите число:");
+                            int value;
+                            string s = Console.ReadLine();
+                            if (Int32.TryParse(s, out value))
+                            {
+                                presenter.Add(value);
+                                Print();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Некорректный ввод");
+                            }
+                            break;
+                        case 2:
+                            Console.WriteLine("Какой элемент удалить?");
+                            int del;
+                            string k1 = Console.ReadLine();
+                            if (Int32.TryParse(k1, out del))
+                            {
+                                presenter.Remove(del);
+                                Print();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Некорректный ввод");
+                            }
+                            break;
+                        case 3:
+                            Print();
+                            break;
+                        case 4:
+                            presenter.Sort();
+                            Print();
+                            break;
+                        case 5:
+                            presenter.Delete2n();
+                            Print();
+                            break;
+                        default:
+
+                            Console.WriteLine("Пользователь дурачок");
+                            break;
+                    }
                 }
                 else
                 {
                     Console.WriteLine("Некорректный ввод");
-                }
-                switch (x)
-                {
-                    case 1:
-                        Console.WriteLine("Введите число:");
-                        int value;
-                        string s = Console.ReadLine();
-                        if (Int32.TryParse(s, out value))
-                        {
-                            presenter.Add(value);
-                            Print();
-                        }
-                        else
-                        {
-                            Console.WriteLine("Некорректный ввод");
-                        }
-                        break;
-                    case 2:
-                        Console.WriteLine("Какой элемент удалить?");
-                        int del;
-                        string k1 = Console.ReadLine();
-                        if (Int32.TryParse(k1, out del))
-                        {
-                            presenter.Remove(del);
-                            Print();
-                        }
-                        else
-                        {
-                            Console.WriteLine("Некорректный ввод");
-                        }
-                        break;
-                    case 3:
-                        Print();
-                        break;
-                    case 4:
-                        presenter.Sort();
-                        Print();
-                        break;
-                    case 5:
-                        presenter.Delete2n();
-                        Print();
-                        break;
-                    default:
-
-                        Console.WriteLine("Пользователь дурачок");
-                        break;
-                }
+                }            
             }
         }
         public static void Print()
