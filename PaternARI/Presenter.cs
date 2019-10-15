@@ -39,22 +39,20 @@ namespace PaternARI
         public void Delete2n()
         {
             int temp;
-            bool cout = true;
+            bool flag = true;
             for (int i = 0; i < array.Length; i++)
             {
-                if ((array[i] % 2) == 0 && array[i] != 0 && cout)
+                if ((array[i] % 2) == 0 && array[i] != 0 && flag)
                 {
-                    cout = false;
+                    flag = false;
                     for (int k = i; k < array.Length - 1; k++)
                     {
-                        temp = array[k];
-                        array[k] = array[k + 1];
-                        array[k + 1] = temp;
+                        Temp(k, 1);
                     }
                     Array.Resize(ref array, array.Length - 1);
                 }
             }
-            if (cout)
+            if (flag)
             {
                 Console.WriteLine("У вас нет четных чисел");
             }
@@ -69,12 +67,18 @@ namespace PaternARI
                 {
                     if (array[i] > array[i + 2])
                     {
-                        temp = array[i];
-                        array[i] = array[i + 2];
-                        array[i + 2] = temp;
+                        Temp(i, 2);
                     }
                 }
             }
+        }
+
+        public void Temp(int index, int step)
+        {
+            int temp;
+            temp = array[index];
+            array[index] = array[index + step];
+            array[index + step] = temp;
         }
 
     }
